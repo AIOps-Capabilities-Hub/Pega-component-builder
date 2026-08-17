@@ -1,0 +1,87 @@
+{
+  "name": "Oq7Aiu_Extensions_DecimalField",
+  "label": "Decimal Field",
+  "description": "Decimal field with configurable read-only and conditional colors",
+  "organization": "Oq7Aiu",
+  "version": "1.0.0",
+  "library": "Extensions",
+  "allowedApplications": [],
+  "componentKey": "Oq7Aiu_Extensions_DecimalField",
+  "type": "Field",
+  "subtype": "Decimal",
+  "icon": "images/pz-decimal-active.svg",
+  "properties": [
+    {
+      "name": "label",
+      "label": "Field label",
+      "format": "TEXT",
+      "required": true
+    },
+    {
+      "name": "readOnly",
+      "label": "Read only",
+      "format": "READONLY"
+    },
+    {
+      "name": "decimalPrecision",
+      "label": "Decimal places",
+      "format": "NUMBER",
+      "min": 0,
+      "max": 20
+    },
+    {
+      "name": "showGroupSeparators",
+      "label": "Show thousands separator",
+      "format": "BOOLEAN"
+    },
+    {
+      "label": "Conditional Styling",
+      "format": "GROUP",
+      "properties": [
+        {
+          "name": "enableCondition",
+          "label": "Enable condition-based styling",
+          "format": "BOOLEAN"
+        },
+        {
+          "name": "conditionExpression",
+          "label": "Condition (JS Expression)",
+          "format": "TEXT",
+          "visibility": "$this.enableCondition == true"
+        },
+        {
+          "name": "conditionBackgroundColor",
+          "label": "Background color (when true)",
+          "format": "TEXT",
+          "visibility": "$this.enableCondition == true"
+        },
+        {
+          "name": "conditionFontColor",
+          "label": "Font color (when true)",
+          "format": "TEXT",
+          "visibility": "$this.enableCondition == true"
+        }
+      ]
+    },
+    {
+      "label": "Appearance",
+      "format": "GROUP",
+      "properties": [
+        {
+          "name": "readOnlyBackgroundColor",
+          "label": "Read-only background color",
+          "format": "TEXT"
+        },
+        {
+          "name": "readOnlyFontColor",
+          "label": "Read-only font color",
+          "format": "TEXT"
+        }
+      ]
+    }
+  ],
+  "defaultConfig": {
+    "label": "@L $this.label",
+    "detailFVLItem": true
+  }
+}
