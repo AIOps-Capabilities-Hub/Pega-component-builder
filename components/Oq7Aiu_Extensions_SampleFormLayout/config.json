@@ -1,0 +1,14 @@
+{
+  "name": "Oq7Aiu_Extensions_SampleFormLayout",
+  "label": "Sample Form Layout",
+  "description": "Reference Form layout template.",
+  "organization": "Oq7Aiu",
+  "version": "1.0.0",
+  "library": "Extensions",
+  "allowedApplications": [],
+  "componentKey": "Oq7Aiu_Extensions_SampleFormLayout",
+  "type": "Template",
+  "subtype": "FORM",
+  "properties": [{ "name": "heading", "label": "Heading", "format": "TEXT" }],
+  "defaultConfig": { "heading": "Form" }
+}
