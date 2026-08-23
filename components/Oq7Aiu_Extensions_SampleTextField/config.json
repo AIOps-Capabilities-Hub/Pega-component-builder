@@ -1,0 +1,17 @@
+{
+  "name": "Oq7Aiu_Extensions_SampleTextField",
+  "label": "Sample Text Field",
+  "description": "Reference Field component.",
+  "organization": "Oq7Aiu",
+  "version": "1.0.0",
+  "library": "Extensions",
+  "allowedApplications": [],
+  "componentKey": "Oq7Aiu_Extensions_SampleTextField",
+  "type": "Field",
+  "subtype": "Text",
+  "properties": [
+    { "name": "label", "label": "Label", "format": "TEXT" },
+    { "name": "value", "label": "Value", "format": "TEXT" }
+  ],
+  "defaultConfig": { "label": "Sample text", "value": "" }
+}

@@ -1,0 +1,14 @@
+{
+  "name": "Oq7Aiu_Extensions_SamplePageCaseWidget",
+  "label": "Sample Page and Case Widget",
+  "description": "Reference PAGE and CASE widget component.",
+  "organization": "Oq7Aiu",
+  "version": "1.0.0",
+  "library": "Extensions",
+  "allowedApplications": [],
+  "componentKey": "Oq7Aiu_Extensions_SamplePageCaseWidget",
+  "type": "Widget",
+  "subtype": ["PAGE", "CASE"],
+  "properties": [{ "name": "heading", "label": "Heading", "format": "TEXT" }],
+  "defaultConfig": { "heading": "Sample page and case widget" }
+}
